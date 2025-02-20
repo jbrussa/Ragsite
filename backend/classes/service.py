@@ -111,10 +111,7 @@ class Service:
                 # Insertamos datos en tabla historial
                 cursor.execute("INSERT INTO historial (idsession, rol, mensaje, fecha_hora) VALUES (?, ?, ?, ?)", (session_id, "user", query, dateTimeQueryFormatted)) 
                 cursor.execute("INSERT INTO historial (idsession, rol, mensaje, fecha_hora) VALUES (?, ?, ?, ?)", (session_id, "assistant", response, dateTimeResponseFormatted))   
-
                 conn.commit()
-
-            return
 
 
     def search_history(self, session_id: str) -> list[str]:
