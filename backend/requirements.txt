@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+langchain_community
+langchain
+langchain-openai
+langchain-chroma
+pypdf
+# pysqlite3-binary 
